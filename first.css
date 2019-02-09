@@ -1,0 +1,124 @@
+     body {
+      background: url("stone.jpg");
+      background-size: 100%;
+      background-repeat: no-repeat;
+      padding-top: 0;
+      background-repeat: repeat;
+      background-color: lightgrey
+      } /* Body characterstics */
+	
+	
+     p {
+      text-align: center;
+      color: #EBEBEB;
+      font-family: "Helvetica Neue",Arial,"Lucida Grande",sans-serif; 
+      } /* Paragraph */
+       
+     h1 {
+      font-family: "Helvetica Neue",Arial,"Lucida Grande",sans-serif; 
+      color: blanchedalmond;
+      text-align: center
+      } /* Font family and color setting of heading */
+
+     h2 {
+      font-family: "Helvetica Neue",Arial,"Lucida Grande",sans-serif;
+      color: lightgrey;
+      text-align: center
+      } /* Font family and color setting of heading */
+
+     h3 {
+      font-family: "Helvetica Neue",Arial,"Lucida Grande",sans-serif;
+      color: lightgrey;
+      text-align: center
+      } /* Font family and color setting of heading */
+
+     h4 {
+      font-family: "Helvetica Neue",Arial,"Lucida Grande",sans-serif;
+      color: lightgrey;
+      text-align: center
+      } /* Font family and color setting of heading */
+
+     ul.navmenu{
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: coral;
+      } /*Navigation menu*/
+
+     li a {
+      float: left;
+      }
+
+     li a {
+      display: block;
+      color: white;
+      text-align: left;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-family: "Helvetica Neue",Arial,"Lucida Grande",sans-serif;
+      }
+
+     li a:hover {
+      background-color: #111;
+      }
+
+     div {
+      background-color: darkgray;
+      width: 600px;
+      padding: 25px;
+      margin: auto;
+      color:#EBEBEB;
+      border: 60px solid lightgrey;
+      border-radius: 20px;
+      font-family: "Helvetica Neue",Arial,"Lucida Grande",sans-serif;
+      } /*Div characteristics, layout box*/
+      
+     #error1 {
+      color: red;
+      text-align: left;
+      font-size: 13px;
+      }
+     
+     #error2 {
+      color: red;
+      text-align: left;
+      font-size: 13px;
+      }
+
+     #error3 {
+      color: red;
+      text-align: left;
+      font-size: 13px;
+      }
+     #error4 {
+      color: red;
+      text-align: left;
+      font-size: 13px;
+      }
+     #error5 {
+      color: red;
+      text-align: left;
+      font-size: 13px;
+      }
+     #error6 {
+      color: red;
+      text-align: left;
+      font-size: 13px;
+      }
+     #error7 {
+      color: red;
+      text-align: left;
+      font-size: 13px;
+      }
+     #error8 {
+      color: red;
+      text-align: left;
+      font-size: 13px;
+      }
+     #error9 {
+      color: red;
+      text-align: left;
+      font-size: 13px;
+      }
+}

@@ -1,0 +1,170 @@
+<!DOCTYPE html><!--I have defined type of the document-->
+ <html lang="en"><!--Language of the document-->
+  <head>
+   <meta charset="UTF-8"><!--This is the encode of the document-->
+    <title>Paradise Cloud Travels/Book now</title><!--This title will appear in the url in the addres bar-->
+   <!--This link creates a connection between this page and the external file sheet--> 
+   <link rel="stylesheet" type="text/css" href="first.css">   
+   <style type="text/css">
+       
+     form {
+      color:#EBEBEB;
+      font-family: "Helvetica Neue",Arial,"Lucida Grande",sans-serif;
+      }/*I have customized characteristics of the bookng form*/
+      
+     input[type=text] {
+      width: 50%;
+      padding: 10px 20px;
+      margin: 8px 0;
+      box-sizing: border-box;
+      border: 2px solid darkgrey;
+      border-radius: 4px;
+      }/*Text boxes characteristics*/
+
+     input[type=password] {
+      width: 20%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      box-sizing: border-box;
+      border: 2px solid darkgrey;
+      border-radius: 4px;
+      }/*Password box characteristics*/
+
+     input[type=reset] {
+      width: 20%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      box-sizing: border-box;
+      border: 2px solid white;
+      border-radius: 8px;
+      font-family: "Helvetica Neue",Arial,"Lucida Grande",sans-serif;
+      }/*Reset button characteristics*/
+
+     input[type=submit] {
+      width: 20%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      box-sizing: border-box;
+      border: 2px solid white;
+      border-radius: 8px;
+      font-family: "Helvetica Neue",Arial,"Lucida Grande",sans-serif;
+      }/*Submit button characteristics*/
+
+     input[type=number] {
+      width: 20% ;
+      padding: 12px 20px;
+      margin: 8px 0;
+      box-sizing: border-box;
+      border: 2px solid darkgrey;
+      border-radius: 4px;
+      }/*Number box` characteristics*/
+    
+   </style> 
+      
+  </head>
+     
+  <body>
+      
+   <nav><!--I use this tag to help the customer navigate through the website-->
+       
+     <ul class="navmenu">
+      <li class="a">
+       <a href="file:///Users/enxhikaziu/Desktop/Intro.%20to%20Web%20Design/Assignments/Website%20Development%20JavaScript/JavaScript%20webpage/KaziuEnxhiGroup1Element3/Homepage.html">Homepage</a></li><!--This is a link to the homepage in order to make it easier for the customer to go back-->
+      <li class="a">
+       <a href="file:///Users/enxhikaziu/Desktop/Intro.%20to%20Web%20Design/Assignments/Website%20Development%20JavaScript/JavaScript%20webpage/KaziuEnxhiGroup1Element3/About%20us.html">About us</a></li>
+      <li class="a">
+       <a href="file:///Users/enxhikaziu/Desktop/Intro.%20to%20Web%20Design/Assignments/Website%20Development%20JavaScript/JavaScript%20webpage/KaziuEnxhiGroup1Element3/Holiday%20Packages.html">Holiday Packages</a></li>
+      <li class="a">
+       <a href="file:///Users/enxhikaziu/Desktop/Intro.%20to%20Web%20Design/Assignments/Website%20Development%20JavaScript/JavaScript%20webpage/KaziuEnxhiGroup1Element3/More.html">More</a></li>
+      <li>
+       <a href="file:///Users/enxhikaziu/Desktop/Intro.%20to%20Web%20Design/Assignments/Website%20Development%20JavaScript/JavaScript%20webpage/KaziuEnxhiGroup1Element3/Gallery.html">Gallery</a></li>
+      <li class="a">
+       <a href="file:///Users/enxhikaziu/Desktop/Intro.%20to%20Web%20Design/Assignments/Website%20Development%20JavaScript/JavaScript%20webpage/KaziuEnxhiGroup1Element3/External%20links.html">External Links</a></li>
+     </ul>
+       
+   </nav>
+      
+   <h1><strong>Paradise Cloud Travels</strong></h1>
+   <br>
+      
+   <div>
+    <h2 style="color:brown">Book now</h2>
+       
+    <form name="myForm" method="post" onsubmit="return Validation();" action="thank_you.html"><!--I used the form function to create a booking form for the     customers-->
+    First name<br><!--This and the following inputs are used to create textboxes so that the customers put their information-->
+    <input id="name" type="text" name="first">
+    <p id="error1"></p>
+    Last name <br>
+    <input id="last" type="text" name="last">
+    <p id="error2"></p>
+    Contact Telephone No.<br>
+    <input id="number" type="text" name="number">
+    <p id="error3"></p>
+    Contact Email Address<br>
+    <input id="email" type="text" name="number">
+    <p id="error4"></p>
+    Gender<!--Gender radio button list--><br>
+    <input type="radio" name="gender" value="Female">Female &#9792;<br><!--This "&#9792" displays the symbol of the female-->
+    <input type="radio" name="gender" value="Male">Male &#9794;<!--This "&#9794" displays the symbol of the male--><br><br> <!--I have put different names because if there are more than one passenger, they might be of different genders so the clients can select both genders-->
+    Number of Passengers<br>
+    <select id="passengers"><!--Drop down list-->
+     <option value =""></option>
+     <option value="1">1</option>
+     <option value="2">2</option>
+     <option value="3">3</option>
+     <option value="4">4</option>
+     <option value="5">5</option>
+     <option value="6">6</option>
+     <option value="7">7</option>
+     <option value="8">8</option>
+     <option value="9">9</option>
+     <option value="10">10</option></select><!--Drop down list-->
+     <p id="error5"></p>
+    Number of Baggages<br>
+    <input type="number" min="0" max="6"><br><br>
+    Specifics<br><!--Checkbox list-->
+     <input type="checkbox" name="Swimming Pool" value="Specifics">Swimming Pool<br>
+     <input type="checkbox" name="Internet acces" value="Specifics">Internet access<br>
+     <input type="checkbox" name="Spa" value="Specifics">Spa<br>
+     <input type="checkbox" name="Gym" value="Gym">Gym<br>
+     <input type="checkbox" name="Hiking" value="Specifics">Hiking<br>
+     <input type="checkbox" name="Diving" value="Diving">Diving<br><br>
+    Package Type<br><!--Radio button list-->
+     <input type="radio" name="type" value="Package">Hotel Only<br> 
+     <input type="radio" name="type" value="Package">Flight Only<br> 
+     <input type="radio" name="type" value="Package">Flight and Hotel<br><br>
+    Flight From<br>
+     <input id="from" type="text" name="Flight from"><!--Text field-->
+     <p id="error6"></p>
+    Flight To<br>
+     <input id="destination" type="text" name="Flight to">
+     <p id="error7"></p>
+    Departing Date(dd-mm-yyyy)<br>
+     <input id="date1" type="text" name="Departure Date">
+     <p id="error8"></p>
+    Returning Date(dd-mm-yyyy)<br>
+     <input id="date2" type="text" name="Returning Date">
+     <p id="error9"></p>
+    Further Information<br>
+     <input type="text" name="Further Information"><br><br>
+     <input type="reset"><!--Reset button--><br><br>
+    You are now ready to make your payment :) <br><br>
+    Card number<br>
+     <input type="text" name="Card number"><br><br>
+    PIN number<br>
+     <input type="password" name="PIN"><!--Text field customized for password--><br><br>
+       
+     <input type="submit" value="Submit">
+     <br><br>
+       </form>
+   </div><!--End of the form--><br>
+     <script src="first.js"></script>
+   <footer><p style="color: #EBEBEB">&copy; Copyrights 21321344</p>
+    <p><a href="https://jigsaw.w3.org/css-validator/" target="_blank">
+     <img style="border:0;width:88px;height:31px"
+        src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+        alt="Valid CSS!"></a></p>
+   </footer>
+   
+  </body><!--End of the body-->
+ </html><!--End of this webpage-->
